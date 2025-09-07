@@ -1,0 +1,58 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="NopCommerceAutomationSuite" parallel="tests" thread-count="1">
+
+    <!-- 🔹 Attach Listener for ExtentReports -->
+    <listeners>
+        <listener class-name="utils.TestListener"/>
+    </listeners>
+ <test name="Register Module">
+        <classes>
+            <class name="tests.RegisterTests"/>
+        </classes>
+    </test>
+    <!-- 🔹 Group tests by modules -->
+    <test name="Login Module">
+        <classes>
+            <class name="tests.LoginTests"/>
+        </classes>
+    </test>
+
+   
+
+    <test name="Product Module">
+        <classes>
+            <class name="tests.ProductTests"/>
+        </classes>
+    </test>
+
+    <test name="Cart Module">
+        <classes>
+            <class name="tests.CartTests"/>
+        </classes>
+    </test>
+
+    <test name="Checkout Module">
+        <classes>
+            <class name="tests.CheckoutTests"/>
+        </classes>
+    </test>
+
+    <test name="Payment Module">
+        <classes>
+            <class name="tests.PaymentTests"/>
+        </classes>
+    </test>
+
+    <test name="Order Module">
+        <classes>
+            <class name="tests.OrderTests"/>
+        </classes>
+    </test>
+
+    <test name="API Module">
+        <classes>
+            <class name="tests.ApiTests"/>
+        </classes>
+    </test>
+
+</suite>

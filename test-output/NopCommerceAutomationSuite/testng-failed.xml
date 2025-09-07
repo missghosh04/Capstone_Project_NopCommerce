@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="1" parallel="tests" name="Failed suite [NopCommerceAutomationSuite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="utils.TestListener"/>
+  </listeners>
+  <test thread-count="1" parallel="tests" name="Payment Module(failed)">
+    <classes>
+      <class name="tests.PaymentTests">
+        <methods>
+          <include name="testPaymentProcess"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- tests.PaymentTests -->
+    </classes>
+  </test> <!-- Payment Module(failed) -->
+</suite> <!-- Failed suite [NopCommerceAutomationSuite] -->
