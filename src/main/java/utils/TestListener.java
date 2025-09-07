@@ -41,7 +41,7 @@ public class TestListener implements ITestListener {
 
     @Override
     public void onTestFailure(ITestResult result) {
-        test.get().log(Status.FAIL, "❌ Test Failed: " + result.getMethod().getMethodName());
+    	test.get().log(Status.FAIL, "❌ Test Failed: " + result.getMethod().getMethodName());
         test.get().log(Status.FAIL, result.getThrowable());
     }
 
