@@ -63,13 +63,7 @@
         </dependency>
 
 
-        <dependency>
-        	<groupId>org.example</groupId>
-        	<artifactId>
-        		HealthApp_Substore_PL2_9TCs_Solution
-        	</artifactId>
-        	<version>1.0-SNAPSHOT</version>
-        </dependency>
+        
         <dependency>
         	<groupId>BDD_cucumber</groupId>
         	<artifactId>BDD</artifactId>
